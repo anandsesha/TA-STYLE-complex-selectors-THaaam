@@ -158,7 +158,12 @@ header{
 .flex-45{
     flex: 0 1 45%;
 }
-
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-25{
+    flex: 0 1 25%;
+}
 /* Hero Section */
 
 .hero{
@@ -419,4 +424,20 @@ hr{
 }
 .button-margin{
     margin-bottom: 6rem;
+}
+
+/* Footer */
+
+.footer{
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+.find-us li{
+    margin-right: 2rem;
+    padding: 1.2rem;
+    background-color: #59bfc2;
+    border-radius: 50%;
+}
+.find-us li a{
+    color: var(--secondary);
 }
