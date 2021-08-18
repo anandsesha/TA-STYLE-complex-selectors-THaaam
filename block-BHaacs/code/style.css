@@ -175,6 +175,7 @@ header{
 }
 .hero img{
     margin-top: -2rem;
+    /* width: 100%; */
 }
 
 /* Files Section */
@@ -248,7 +249,7 @@ a[href$=".mp4"]{
     font-weight: 500;
 }
 
-.arrow-right {
+/* .arrow-right {
     width: 0; 
     height: 0; 
     border-top: 1.2rem solid transparent;
@@ -264,7 +265,7 @@ a[href$=".mp4"]{
     border-bottom: 1.2rem solid transparent;
 
     border-left: 1rem solid var(--primary);
-}
+} */
 
 /* Weekly Section */
 
@@ -440,4 +441,126 @@ hr{
 }
 .find-us li a{
     color: var(--secondary);
+}
+
+#toggle,.bars{
+    display: none;
+}
+
+/* Media Query Styles */
+
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+    .sm-flex{
+        display: flex;
+    }     
+    .sm-flex-column{
+        flex-direction: column;
+    }
+    .sm-jsb{
+        justify-content: space-between;
+    }
+    .sm-aic{
+        align-items: center;
+    }
+    /* Hero Section */
+    .hero img{
+        width: 100%;
+    }
+    
+    /* Files section */
+    .files a{
+        margin: 3rem 0;
+    }
+    .files{
+        padding-top: 2rem;
+    }
+    /* Monitor Section */
+    .flex-100{
+        flex: 0 1 100%;
+    }
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+    .sm-text-center{
+        text-align: center;
+    }
+    .margin-bottom{
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+    /* Header */
+    .nav-links
+    /* Footer */
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+    .flex-100{
+        flex: 0 1 100%;
+    }
+    .sm-flex{
+        display: flex;
+    }     
+    .sm-flex-column{
+        flex-direction: column;
+    }
+    .sm-jsb{
+        justify-content: space-between;
+    }
+    .sm-aic{
+        align-items: center;
+    }
+
+    .nav-links{
+        display: none;
+    }
+    #toggle:checked ~ .nav-links{
+        display: inline-block;
+    }
+    #toggle{
+        display: none;
+    }
+    .nav-links{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: lightblue;
+        padding-top: 120px;
+        text-align: center;
+    }
+    .nav-links li{
+        margin: 0 2rem;
+    }
+    .bars {
+        display: block;
+      }
+    .bars{
+        position: relative;
+        z-index: 99;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media screen and (max-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+    /* Monitor section */
+    .monitor-section img{
+        width: 100%;
+    }
 }
